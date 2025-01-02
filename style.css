@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+:root{
+  --main-color: #deab5f;
+  --primary-color: #312e2e;
+}
+
+/*Utility Styles*/
+button{
+  padding: 10px 30px;
+  background: var(--main-color);
+  border: none;
+  cursor:pointer;
+}
+
+/*Resets*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #100e0f;
+}
+
+/*Nav Start*/
+nav{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  color: #fff;
+  font-family:sans-serif;
+  padding-top: 15px;
+}
+
+li{
+  display: inline;
+  list-style: none;
+}
+
+li a{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 40px;
+  padding-bottom: 10px;
+}
+
+li a:hover{
+  border-bottom:2px solid var(--main-color)
+}
+
+/*Nav End*/
+
+/*Header Start*/
+
+.header{
+  background: url(images/close-love-brown-cup-natural\ copy.png);
+  background-position: center;
+  background-position-y: 65%;
+  background-size: 90vh 60vh;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  /*Flexbox*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  position: relative;
+  text-align: center;
+}
+
+.main-headings{
+  position: absolute;
+  top: 7rem;
+  font-size: 4rem;
+  word-spacing: 10px
+}
+
+.primary-headings{
+  position: absolute;
+  bottom: 4rem;
+  font-size: 4rem;
+  word-spacing: 10px;
+  margin-bottom: -40px;
+}
+
+.main-btn{
+  position: absolute;
+  bottom: 2rem;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: transparent;
+  background: var(--main-color);
+  transform: translateY(60px);
+}
+
+/*Our Story*/
+#our-story{
+  height: 80vh;
+  margin-top: 10%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img{
+  width: 800px;
+  height: 520px;
+  background:url(images/glass\ coffee.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.title-style{
+  display: flex;
+  align-items: center;
+}
+
+.title{
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  color: #fff;
+  transform: translateX(-100px);
+}
+
+.line{
+  width: 100px;
+  height: 2px;
+  background:#fff;
+  transform: translateX(-120px);
+}
+
+.section-content p{
+  max-width: 500px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+/*Our Story End*/
+
+/*Coffee Start*/
+.coffee-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.img-coffee-cup-with-beans{
+  width: 600px;
+  height: 600px;
+}
+
+.title-two{
+  font-size: 3.5rem;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+}
+
+.content-section p{
+  max-width: 500px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+/*Coffee End*/
+
+.products{
+  margin-top: 5rem;
+}
+
+.title-three {
+  font-size: 4rem;
+  margin-left: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card{
+  border: 2px solid var(--main-color);
+  padding: 0 20px;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.card-img{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -60px;
+}
+
+.lavender-latte{
+  background: url(images/lavender-latte.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.mocha-cappuccino{
+  background: url(images/mocha-cappuccino.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.dirty-chai{
+  background: url(images/dirty-chai.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.card-title{
+  color: white;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+
+.card .items p {
+  color: white;
+  margin: 20px 0;
+  font-family: sans-serif;
+}
+
+/*Products End*/
+
+footer{
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+footer .container{
+  margin: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+footer .heading-info{
+  margin-bottom: 20px;
+}
+
+footer p{
+  line-height: 25px;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.para{
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*PROJECT END*/
+
+/*Responsiveness*/
+@media only screen and (max-width: 768) {
+  .main-headings, .primary-headings{
+    font-size: 2.5rem;
+  }
+  #our-story {
+    text-align:center;
+  }
+
+  #our-story .title{
+    transform: translateX(50px);
+  }
+
+  #our-story .line{
+    display:none;
+  }
+
+  .content-section{
+    text-align: center;
+  }
+
+  #our-story .img-container .img {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .coffee-container .img-coffee-cup-with-beans{
+    margin-top: 5rem;
+    width: 50%;
+  }
+  
+  .title{
+    margin: 0 auto;
+  }
+
+  .title-two{
+    margin: 0 auto;
+  }
+
+  .title-three{
+    display: none;
+  }
+
+  .para{
+    display: none;
+  }
+}
